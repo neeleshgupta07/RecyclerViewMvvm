@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="@dimen/_5dp"
     android:orientation="vertical">
+
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
-    <TextView
-        android:id="@+id/textViewDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_20"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="sasahasahshs"
         />
 
-</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_5dp">
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_toLeftOf="@+id/imageView"
+                android:paddingRight="@dimen/_5dp"
+                android:text="uiuiiiiuiuji"
+                android:textSize="@dimen/textsize_16" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/cardview_dark_background"
+                android:src="@mipmap/ic_launcher_round"
+                />
+        </RelativeLayout>
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_1dp"
+    android:background="@color/cardview_dark_background"/>
+    </LinearLayout>
